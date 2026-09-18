@@ -5,9 +5,12 @@ file with you at recitation.
 
 ## 1. Deployed URL and instance id
 
-<!-- The ServiceUrl and InstanceId outputs. Paste both here every time
-describe-stacks prints them, for the healthy deploy and for scenario 2. Both
-change on every recreate, and you will need them for curls and sessions. -->
+| Property    | DescribeStacks |
+| ----------- | ----------- |
+| InstanceId  |  i-0a206bc61e704cb62 |
+| ServiceUrl  | http://ec2-54-91-57-171.compute-1.amazonaws.com:8080 |
+
+
 
 ## 2. External health check
 
@@ -15,7 +18,8 @@ Run the check from your own machine, not from the instance. Paste the command an
 response.
 
 ```
-
+Sanjana@sanjanas-mac 17514-f26-lab04 % curl http://ec2-54-91-57-171.compute-1.amazonaws.com:8080/api/health
+{"status":"ok"}%    
 ```
 
 ## 3. What the template created
@@ -23,7 +27,8 @@ response.
 Three or four sentences, your own words. What compute, what network access, and what
 glue made the service start.
 
-<!-- Your answer here. -->
+The template created an EC2 instance on AWS that hosts the API. We made an HTTP request to the URL that 
+serves the API and we checked the `/api/health` endpoint.
 
 ## 4. Scenario 2 diagnosis
 
