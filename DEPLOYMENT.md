@@ -81,5 +81,9 @@ Sanjana@sanjanas-mac 17514-f26-lab04 % curl http://ec2-54-205-185-242.compute-1.
 Paste the delete output, or describe the console evidence that the resources are gone.
 
 ```
+Sanjana@sanjanas-mac 17514-f26-lab04 % aws cloudformation delete-stack --stack-name lab04-service
+aws cloudformation wait stack-delete-complete --stack-name lab04-service
+Sanjana@sanjanas-mac 17514-f26-lab04 % aws cloudformation describe-stacks --stack-name lab04-service
 
+aws: [ERROR]: An error occurred (ValidationError) when calling the DescribeStacks operation: Stack with id lab04-service does not exist
 ```
