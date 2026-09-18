@@ -6,9 +6,5 @@
   {
     "ParameterKey": "ServicePort",
     "ParameterValue": "8080"
-  },
-  {
-    "ParameterKey": "PortOverride",
-    "ParameterValue": "9090"
   }
 ]
